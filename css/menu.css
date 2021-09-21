@@ -1,0 +1,100 @@
+html {
+    font-family: "Open Sans";
+}
+
+nav img {
+    max-width: 120px;
+    min-width: 50px;
+}
+
+nav h3 a{
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 300;
+    color: #393939;
+}
+
+nav ul li a{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav h1 {
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+.menu {
+    background-color: #393939;
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 300px;
+    max-height: 200px;
+}
+.nav-link {
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background-color: #393939;
+}
+
+.nav-link ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.background {
+    background-image: url("../assets/images/coffee-circle.jpg");
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 575px;
+    max-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+section h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 33px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #5bacc3;
+    width: 100%;
+    font-style: normal;
+}
+
+section p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    width: 35%;
+}
+
+#hot-drinks, #pastries {
+    background-color: #fff0ed;
+}
+
+#cold-drinks {
+    background-color: #f7f7f7;
+}
