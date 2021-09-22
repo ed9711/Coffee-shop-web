@@ -2,7 +2,7 @@ html {
     font-family: "Open Sans";
 }
 
-nav img {
+.icon {
     max-width: 120px;
     min-width: 50px;
 }
