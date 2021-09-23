@@ -4,8 +4,8 @@ html {
 
 /* can be in global */
 .icon {
-    min-width: 50px;
-    max-width: 120px;
+    max-width: 7.5rem;
+    min-width: 3.125rem;
 }
 
 nav, header div{
@@ -13,20 +13,20 @@ nav, header div{
 }
 
 .product {
-    min-height: 240px;
-    max-height: 550px;
+    min-height: 15rem;
+    max-height: 34.375rem;
 }
 
 nav h2 a, section h3, .price, footer h3{
     text-decoration: none;
-    font-size: 33px;
+    font-size: 2.0625rem;
     font-weight: 300;
     color: #393939;
 }
 
 /* can be in global */
 nav ul li a{
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
 }
 
@@ -36,13 +36,13 @@ nav ul {
 }
 
 div h1, section h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
     color: #393939;
 }
 
 div p{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -52,7 +52,7 @@ div button {
 }
 
 div button a {
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
     color: white;
     text-decoration: none;
@@ -60,11 +60,12 @@ div button a {
 
 .price {
     color: #5bacc3;
+    /* 300 in guide but looks like 400 */
     font-weight: 400;
 }
 
 .discount {
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: 400;
     background-color: #393939;
     color: white;
