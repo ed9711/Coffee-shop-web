@@ -5,70 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/landing.css">
+	<link rel="stylesheet" href="/css/global.css">
     <title>Coffee Shop - Home</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="/index.html"><img class="icon" src="/assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+		<nav class="nav">
+			<a href="/index.html"><img class="icon" src="/assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee-beans"></a>
 			
-			<h2><a href="/index.html">nitro</a></h2>
-			<ul>
-				<li>
+			<h3 class="nav__title"><a href="/index.html">nitro</a></h3>
+			<ul class="nav__list">
+				<li class="header__link">
 					<a href="">ABOUT</a>
 				</li>
-				<li>
-					<a href="./pages/menu.html">MENU</a>
+				<li class="header__link">
+					<a href="/pages/menu.html">MENU</a>
 				</li>
-
-				<li>
-					<a href="./pages/menu.html">SHOP NOW</a>
+		
+				<li class="header__link header__link--blue">
+					<a href="/pages/menu.html">SHOP NOW</a>
 				</li>
-
+		
 			</ul>
 		</nav>
-		<div>
-			<h1>Nitro Coffee</h1>
-			<p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-			<button><a href="/pages/menu.html">SHOP NOW</a></button>
+		<div class="intro">
+			<h1 class="intro__title">Nitro Coffee</h1>
+			<p class="intro__detail">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+			<button class="button"><a href="/pages/menu.html">SHOP NOW</a></button>
 			<img src="/assets/images/coffeebeans-hero.png" alt="coffee bag">
 		</div>
 	</header>
-	<section>
-		<h2>Our Products</h2>
-		<div>
-			<img class="product" src="/assets/images/coffeebeans.png" alt="coffee beans">
-			<h3>Coffee Beans</h3>
+	<section class="product">
+		<h2 class="product__title">Our Products</h2>
+		<div class="product__card">
+			<img class="product__img" src="/assets/images/coffeebeans.png" alt="coffee beans">
+			<h3 class="product__subtitle">Coffee Beans</h3>
 			<p class="price">$18.99</p>
 		</div>
-		<div>
-			<img class="product" src="/assets/images/coldbrew.png" alt="cold brew">
-			<h3>Cold Brew</h3>
+		<div class="product__card">
+			<img class="product__img" src="/assets/images/coldbrew.png" alt="cold brew">
+			<h3 class="product__subtitle">Cold Brew</h3>
 			<p class="price">$4.99</p>
 		</div>
-		<div>
-			<img class="product" src="/assets/images/inhousebrew.png" alt="in-house Brew">
-			<h3>In-house Brew</h3>
+		<div class="product__card">
+			<img class="product__img" src="/assets/images/inhousebrew.png" alt="in-house Brew">
+			<h3 class="product__subtitle">In-house Brew</h3>
 			<p class="price">$2.99</p>
 		</div>
-		<div><button><a href="/pages/menu.html">VIEW ALL</a></button></div>
+		<div><button class="button"><a href="/pages/menu.html">VIEW ALL</a></button></div>
 	</section>
 	<section>
 		<P class="discount">Get 20% off your first order with code: <span>FirstNitro</span></P>
 	</section>
-	<footer>
+	<footer class="footer">
 		<div>
-			<h3>Address</h3>
-			<p>503 Broadway Penthouse</p>
-			<p>New York</p>
+			<h3 class="footer__title">Address</h3>
+			<p class="footer__detail">503 Broadway Penthouse</p>
+			<p class="footer__detail">New York</p>
 		</div>
 		<div>
-			<h3>Hours</h3>
-			<p><b>Monday - Friday:</b> 9am - 7pm</p>
-			<p><b>Saturday - Sunday:</b> 10am - 5pm</p>
+			<h3 class="footer__title">Hours</h3>
+			<p class="footer__detail"><b>Monday - Friday:</b> 9am - 7pm</p>
+			<p class="footer__detail"><b>Saturday - Sunday:</b> 10am - 5pm</p>
 		</div>
 		<div>
-			<h3>Social</h3>
+			<h3 class="footer__title">Social</h3>
 			<a href="https://facebook.com"><img class="icon" src="/assets/logos/Facebook-Icon.svg" alt="facebook"></a>
 			<a href="https://yelp.com"><img class="icon" src="/assets/logos/Yelp-Icon.svg" alt="yelp"></a>
 			<a href="https://instagram.com"><img class="icon" src="/assets/logos/Instagram-Icon.svg" alt="instagram"></a>	

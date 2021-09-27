@@ -1,47 +1,8 @@
-html {
-    font-family: "Open Sans";
-}
-
-.icon {
-    max-width: 7.5rem;
-    min-width: 3.125rem;
-}
-
-.header-link, nav h3 {
-    display: inline-block;
-}
-
-nav {
+.nav {
     background-color: #fff0ed;
 }
 
-nav h3 a{
-    text-decoration: none;
-    font-size: 3.75rem;
-    font-weight: 300;
-    color: #393939;
-}
-
-.header-link a{
-    font-size: 1.3125rem;
-    font-weight: 400;
-    text-decoration: none;
-    color: #393939;
-    /* margin-right: 2rem; */
-    padding-right: 1.25rem;
-}
-
-
-.header-link:last-child a{
-    color: #5bacc3;
-}
-
-nav ul {
-    list-style: none;
-    display: inline-block;
-}
-
-nav h1 {
+.nav-menu__title {
     text-decoration: none;
     font-size: 3.75rem;
     font-weight: 300;
@@ -49,7 +10,7 @@ nav h1 {
     text-align: center;
     margin-top: 0em;
 }
-.menu {
+.nav-menu {
     background-color: #393939;
     min-width: 17.5rem;
     min-height: 11.25rem;
@@ -64,13 +25,13 @@ nav h1 {
     background-color: #393939;
 }
 
-.nav-link ul li{
+.nav-link__item{
     display: inline-block;
     border-left: 0.25em solid #5bacc3;
     padding: 0 1.25em;
 }
 
-.nav-link ul li a {
+.nav-link__item a {
     color: white;
     text-decoration: none;
     font-size: 1.3125rem;
@@ -88,30 +49,33 @@ nav h1 {
     background-size: cover;
 }
 
-section h2 {
+.menu-category__title {
     font-size: 3.75rem;
     font-weight: 300;
     text-align: center;
     margin-top: 0em;
-    padding-top: 0.25em;
+    padding-top: 3rem;
 }
 
-section h3 {
+.menu-category__subtitle{
     font-size: 2.0625rem;
     font-weight: 300;
     text-align: center;
+    margin: 0;
+
 }
 
-.price {
+.menu-category__price {
     font-size: 1.125rem;
     font-weight: 400;
     text-align: center;
     color: #5bacc3;
     width: 100%;
     font-style: normal;
+    padding-bottom: 1rem;
 }
 
-section p {
+.menu-category p {
     font-size: 1.125rem;
     font-weight: 400;
     font-style: italic;
@@ -120,6 +84,10 @@ section p {
 
     /* cant figure out what this is? */
     width: 31rem;
+}
+
+.menu-category {
+    padding-bottom: 2rem;
 }
 
 #hot-drinks, #pastries {

@@ -1,57 +1,55 @@
-html {
-    font-family: "Open Sans";
-}
-
-/* can be in global */
-.icon {
-    max-width: 7.5rem;
-    min-width: 3.125rem;
-}
-
-nav, header div{
+.nav, .intro{
     background-color: #fff0ed;
 }
 
-.product {
+.product__card {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border: 2px soild black;
+    min-width: 20.625rem;
+    max-width: 21.875rem;
+    min-height: 27.5rem;
+    max-height: 28.75rem;
+    padding: 1.25rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+
+.product__img {
     min-height: 15rem;
     max-height: 34.375rem;
 }
-
-nav h2 a, section h3, .price, footer h3{
+.product__subtitle, .price, .footer__title{
     text-decoration: none;
     font-size: 2.0625rem;
     font-weight: 300;
     color: #393939;
 }
 
-/* can be in global */
-nav ul li a{
-    font-size: 1.3125rem;
-    font-weight: 400;
-}
-
-/* can be in global */
-nav ul {
-    list-style: none;
-}
-
-div h1, section h2 {
+.intro__title, .product__title {
     font-size: 3.75rem;
     font-weight: 300;
     color: #393939;
 }
 
-div p{
+.intro__detail, .footer__detail{
     font-size: 1.125rem;
     font-weight: 400;
 }
 
-div button {
+.button {
     background-color: #5bacc3;
     border: transparent;
+    padding: 1.25rem 2rem;
+    min-width: 11.25rem;
+    max-width: 80%;
+
 }
 
-div button a {
+.button a {
     font-size: 1.3125rem;
     font-weight: 400;
     color: white;
@@ -79,6 +77,6 @@ div button a {
     font-weight: 700;
 }
 
-footer {
+.footer {
     background-color: #fff0ed;
 }
