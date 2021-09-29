@@ -11,9 +11,15 @@ html {
     padding-left: 1rem;
 }
 
-.header__link, .nav__title, .nav__list {
-    display: inline-block;
+nav, .nav__list {
+    display: flex;
     list-style: none;
+    align-items: baseline;
+    
+}
+
+.nav__list {
+    justify-content: center;
 }
 
 .nav__title a{
@@ -29,7 +35,7 @@ html {
     text-decoration: none;
     color: #393939;
     /* margin-right: 2rem; */
-    padding-right: 1.25rem;
+    padding-right: 2rem;
 }
 
 .header__link--blue a{

@@ -29,33 +29,49 @@
 			</ul>
 		</nav>
 		<div class="intro">
-			<h1 class="intro__title">Nitro Coffee</h1>
-			<p class="intro__detail">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-			<button class="button"><a href="/pages/menu.html">SHOP NOW</a></button>
+			<div class="intro-card">
+				<h1 class="intro__title">Nitro Coffee</h1>
+				<p class="intro__detail">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+				<button class="button"><a href="/pages/menu.html">SHOP NOW</a></button>
+			</div>
 			<img src="/assets/images/coffeebeans-hero.png" alt="coffee bag">
 		</div>
 	</header>
 	<section class="product">
 		<h2 class="product__title">Our Products</h2>
-		<div class="product__card">
-			<img class="product__img" src="/assets/images/coffeebeans.png" alt="coffee beans">
-			<h3 class="product__subtitle">Coffee Beans</h3>
-			<p class="price">$18.99</p>
+		<div class="product-cards">
+			<div class="product__card">
+				<img class="product__img" src="/assets/images/coffeebeans.png" alt="coffee beans">
+				<div class="subcard">
+					<h3 class="subcard__subtitle">Coffee Beans</h3>
+					<p class="price">$19</p>
+					<div class="line-break"></div>
+					<p class="subcard__description">Pack of 3</p>
+				</div>
+			</div>
+			<div class="product__card">
+				<img class="product__img" src="/assets/images/coldbrew.png" alt="cold brew">
+				<div class="subcard">
+					<h3 class="subcard__subtitle">Cold Brew</h3>
+					<p class="price">$5</p>
+					<div class="line-break"></div>
+					<p class="subcard__description">1 can</p>
+				</div>
+			</div>
+			<div class="product__card">
+				<img class="product__img" src="/assets/images/inhousebrew.png" alt="in-house Brew">
+				<div class="subcard">
+					<h3 class="subcard__subtitle">In-house Brew</h3>
+					<p class="price">$3</p>
+					<div class="line-break"></div>
+					<p class="subcard__description">1 cup</p>
+				</div>
+			</div>
 		</div>
-		<div class="product__card">
-			<img class="product__img" src="/assets/images/coldbrew.png" alt="cold brew">
-			<h3 class="product__subtitle">Cold Brew</h3>
-			<p class="price">$4.99</p>
-		</div>
-		<div class="product__card">
-			<img class="product__img" src="/assets/images/inhousebrew.png" alt="in-house Brew">
-			<h3 class="product__subtitle">In-house Brew</h3>
-			<p class="price">$2.99</p>
-		</div>
-		<div><button class="button"><a href="/pages/menu.html">VIEW ALL</a></button></div>
+		<div class="button-flex"><button class="button"><a href="/pages/menu.html">VIEW ALL</a></button></div>
 	</section>
-	<section>
-		<P class="discount">Get 20% off your first order with code: <span>FirstNitro</span></P>
+	<section class="discount">
+		<div class="discount__banner">Get 20% off your first order with code: <b>FirstNitro</b></div>
 	</section>
 	<footer class="footer">
 		<div>
@@ -70,7 +86,7 @@
 		</div>
 		<div>
 			<h3 class="footer__title">Social</h3>
-			<a href="https://facebook.com"><img class="icon" src="/assets/logos/Facebook-Icon.svg" alt="facebook"></a>
+			<a href="https://facebook.com"><img class="icon icon--footer" src="/assets/logos/Facebook-Icon.svg" alt="facebook"></a>
 			<a href="https://yelp.com"><img class="icon" src="/assets/logos/Yelp-Icon.svg" alt="yelp"></a>
 			<a href="https://instagram.com"><img class="icon" src="/assets/logos/Instagram-Icon.svg" alt="instagram"></a>	
 		</div>
