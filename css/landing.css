@@ -59,13 +59,13 @@
     color: #393939;
 }
 
-.intro__title, .product__title {
+.intro__title, .product__title, .learn-more__title {
     font-size: 3.75rem;
     font-weight: 300;
     color: #393939;
 }
 
-.intro__detail, .footer__detail{
+.intro__detail, .footer__detail, .learn-more__detail{
     font-size: 1.125rem;
     font-weight: 400;
 }
@@ -90,6 +90,11 @@
     font-weight: 400;
     color: white;
     text-decoration: none;
+}
+
+.button__nopad {
+    padding: 1rem 1.8rem 1rem 1.8rem;
+    /* max-width: 5rem; */
 }
 
 .subcard {
@@ -135,6 +140,46 @@
     top: 14%;
 }
 
+.learn-more {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learn-more__card {
+    margin: 5rem 2rem 5rem 0rem;
+    max-width: 35%;
+}
+
+.learn-more__title {
+    margin-bottom: 2rem;
+}
+
+.learn-more__detail {
+    max-width: 90%;
+}
+
+.learn-more__logo {
+    max-width: 85%;
+    max-height: 3rem;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more__logo .icon {
+    max-width: 3rem;
+}
+
+.learn-more__card--img {
+    min-width: 27%;
+    padding: 4rem 0;
+    margin: 0;
+    background-image: url(/assets/images/coldbrewbackground.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .discount {
     min-height: 30rem;
     display: flex;
@@ -157,12 +202,8 @@
 .footer {
     display: flex;
     background-color: #fff0ed;
-    padding: 3rem;
-}
-
-
-.footer__detail, .footer__title, .icon--footer{
-    padding-left: 10rem;
+    padding: 3rem 2rem;
+    justify-content: space-around;
 }
 
 .footer__title {
