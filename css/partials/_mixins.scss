@@ -1,0 +1,10 @@
+@mixin title-spc {
+    font-size: 3.75rem;
+    font-weight: 300;
+    color: #393939;
+}
+
+@mixin detail-spc {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
