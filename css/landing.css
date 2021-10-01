@@ -10,6 +10,13 @@
 
 .intro-card {
     max-width: 23rem;
+    margin-top: 4rem;
+    position: relative;
+    right: 4rem;
+}
+
+.intro__img {
+    padding: 3% 0;
 }
 
 .product {
@@ -70,31 +77,46 @@
     font-weight: 400;
 }
 
-.button-flex {
+.button--flex {
     display: flex;
     justify-content: center;
 }
 
 .button {
-    background-color: #5bacc3;
-    border: transparent;
-    padding: 1.25rem 3rem;
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    min-width: 11.25rem;
-    max-width: 80%;
+    position: relative;
 }
 
-.button a {
+.button__outer {
+    box-sizing: border-box;
+    border: 2px solid #393939;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.button__inner {
+    box-sizing: border-box;
+    background-color: #5bacc3;
+    border: none;
+    padding: 1.25rem;  
+    min-width: 11.25rem;
+    max-width: 80%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.button__inner a {
     font-size: 1.3125rem;
     font-weight: 400;
     color: white;
     text-decoration: none;
-}
-
-.button__nopad {
-    padding: 1rem 1.8rem 1rem 1.8rem;
-    /* max-width: 5rem; */
 }
 
 .subcard {
@@ -171,13 +193,43 @@
 }
 
 .learn-more__card--img {
-    min-width: 27%;
+    box-sizing: border-box;
+    min-width: 28%;
+    height: 27rem;
     padding: 4rem 0;
-    margin: 0;
+    position: relative;
+}
+
+.learn-more__card--outer {
+    box-sizing: border-box;
+    border: 5px solid #5bacc3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.learn-more__card--inner {
+    width: 100%;
+    height: 100%;
     background-image: url(/assets/images/coldbrewbackground.png);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.learn-more__card--inner img {
+    width: 40%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    left: -20px;
 }
 
 .discount {
