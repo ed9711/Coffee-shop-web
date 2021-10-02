@@ -8,3 +8,9 @@
     font-size: 1.125rem;
     font-weight: 400;
 }
+
+@mixin flex-list {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+}

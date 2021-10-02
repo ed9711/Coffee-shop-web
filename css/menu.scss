@@ -72,7 +72,7 @@
             color: $white;
             text-decoration: none;
             font-size: $font-small;
-            font-weight: $font-medium;
+            font-weight: $font-medium + 200;
             text-transform: uppercase;
         }
     }
@@ -107,7 +107,7 @@
     }
     &__price {
         font-size: $font-xsmall;
-        font-weight: $font-medium;
+        font-weight: $font-medium + 200;
         text-align: center;
         color: $nitro-blue;
         width: 100%;
@@ -115,7 +115,7 @@
     }
     &__detail {
         font-size: $font-xsmall;
-        font-weight: $font-medium;
+        font-weight: $font-medium + 200;
         font-style: italic;
         text-align: center;
         margin: 0 auto;
