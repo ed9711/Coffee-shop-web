@@ -2,6 +2,7 @@
 @use "./partials/font-details" as *;
 @use "./partials/colours" as *;
 @use "./partials/mixins" as *;
+@use "./partials/keyframes";
 
 .intro {
     @extend .nav;
@@ -86,23 +87,28 @@
         justify-content: center;
     }
     &__outer {
-        box-sizing: border-box;
-        border: 2px solid $graphite;
+        // box-sizing: border-box;
+        background-color: $nitro-blue;
         width: 100%;
         height: 100%;
         position: absolute;
-        z-index: 10;
+        top: 5px;
+        left: 5px;
+        
     }
     &__inner {
         box-sizing: border-box;
-        background-color: $nitro-blue;
-        border: none;
+        border: 2px solid $graphite;
         padding: 1.25rem;  
-        min-width: 11.25rem;
+        min-width: 11.5rem;
         max-width: 80%;
         position: relative;
-        top: 5px;
-        left: 5px;
+        background-color: transparent;
+        transform: translate(0, 0);
+        transition: transform 0.1s 0s;
+        &:active {
+            transform: translate(5px, 5px);
+        }
         a {
             font-size: $font-small;
             font-weight: $font-medium;
@@ -167,32 +173,39 @@
             position: relative;
         }
         &--outer {
-            box-sizing: border-box;
-            border: 5px solid $nitro-blue;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-        &--inner {
-            width: 100%;
-            height: 100%;
+            // box-sizing: border-box;
             background-image: url(/assets/images/coldbrewbackground.png);
             background-size: 100% 100%;
-            display: flex;
-            justify-content: center;
+            width: 100%;
+            height: 100%;
             position: absolute;
             top: 20px;
             left: 20px;
+        }
+        &--inner {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 5px solid $nitro-blue;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
             img {
                 width: 40%;
                 height: 70%;
                 margin: auto;
                 position: relative;
-                top: -20px;
-                left: -20px;
+                // top: -20px;
+                // left: -20px;
+                &:hover{
+                    animation-name: constant-rotate;
+                    animation-duration: 2s;
+                    animation-delay: 0;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
             }
         }
     }
@@ -228,6 +241,11 @@
         text-align: center;
         height: fit-content;
         padding: 3rem 6rem;
+        animation-name: constant-flash;
+        animation-duration: 2.5s;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 }
 

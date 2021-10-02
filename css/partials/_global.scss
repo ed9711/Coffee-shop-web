@@ -1,6 +1,6 @@
 @use "./mixins" as *;
-@use "./partials/font-details" as *;
-@use "./partials/colours" as *;
+@use "./font-details" as *;
+@use "./colours" as *;
 
 html {
     font-family: "Open Sans"; 
